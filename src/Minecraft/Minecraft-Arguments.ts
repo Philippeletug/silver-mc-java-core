@@ -97,8 +97,13 @@ export default class MinecraftArguments {
             '-Dfml.ignoreInvalidMinecraftCertificates=true',
             `-Djna.tmpdir=${this.options.path}/versions/${json.id}/natives`,
             `-Dorg.lwjgl.system.SharedLibraryExtractPath=${this.options.path}/versions/${json.id}/natives`,
-            `-Dio.netty.native.workdir=${this.options.path}/versions/${json.id}/natives`
-        ]
+            `-Dio.netty.native.workdir=${this.options.path}/versions/${json.id}/natives`,
+            `-Dminecraft.api.auth.host=http://82.64.217.99:25666`,
+            `-Dminecraft.api.account.host=http://82.64.217.99:25666`,
+            `-Dminecraft.api.session.host=http://82.64.217.99:25666`,
+            `-Dminecraft.api.services.host=http://82.64.217.99:25666`,
+        ];
+        
 
         if (!json.minecraftArguments) {
             jvm.push(opts[process.platform])
