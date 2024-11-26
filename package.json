@@ -1,6 +1,6 @@
 {
     "name": "silver-mc-java-core",
-    "version": "3.12.1",
+    "version": "3.12.2",
     "types": "./build/Index.d.ts",
     "exports": {
         ".": {
