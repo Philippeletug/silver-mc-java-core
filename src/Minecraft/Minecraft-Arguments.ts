@@ -98,10 +98,7 @@ export default class MinecraftArguments {
             `-Djna.tmpdir=${this.options.path}/versions/${json.id}/natives`,
             `-Dorg.lwjgl.system.SharedLibraryExtractPath=${this.options.path}/versions/${json.id}/natives`,
             `-Dio.netty.native.workdir=${this.options.path}/versions/${json.id}/natives`,
-            `-Dminecraft.api.auth.host=http://82.64.217.99:25666`,
-            `-Dminecraft.api.account.host=http://82.64.217.99:25666`,
-            `-Dminecraft.api.session.host=http://82.64.217.99:25666`,
-            `-Dminecraft.api.services.host=http://82.64.217.99:25666`,
+            `-Djava.awt.headless=false -Dcom.sun.awt.AWTUtilities.setWindowOpaque=false -XX:CompileCommand=append,always_inline,java/awt/Component,paint -Djframe.title="Silverdium | V1 | 1.16.5"`
         ];
         
 
