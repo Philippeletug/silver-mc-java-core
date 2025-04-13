@@ -1,6 +1,6 @@
 {
     "name": "silver-mc-java-core",
-    "version": "3.12.3",
+    "version": "3.12.11",
     "types": "./build/Index.d.ts",
     "exports": {
         ".": {
@@ -16,6 +16,8 @@
     "files": [
         "assets/**",
         "build/**",
+        "src/**",
+        "node_modules/7zip-bin/**/*",
         "LICENSE",
         "README.md"
     ],
